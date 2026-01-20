@@ -106,3 +106,21 @@ if st.button('🔍 Predict'):
         st.markdown("<div class='spam-text'>🚨 Spam</div>", unsafe_allow_html=True)
     else:
         st.markdown("<div class='not-spam-text'>✅ Not Spam</div>", unsafe_allow_html=True)
+# ---------------- Navigation back to Flask ----------------
+st.sidebar.markdown(
+    """
+    <div style="margin-top: 20px;">
+        <a href="http://localhost:5000/dashboard" target="_self" style="
+            text-decoration: none; 
+            background-color: #38bdf8; 
+            color: black; 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            font-weight: bold;
+            display: block;
+            text-align: center;
+        ">⬅️ Back to Dashboard</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
